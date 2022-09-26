@@ -1,0 +1,63 @@
+/* removendo css padrão do navegador */
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(199, 172, 224);
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.titulo{
+    margin-top: 0;
+    font-size: 4vw;
+}
+
+h1{ 
+    background-color:rgb(108, 43, 170);
+    text-align: center;
+    height: 200px;
+    padding-top: 40px;
+}
+
+.c{ 
+    margin-top: 25px;
+    text-align: center;
+}
+
+.text{
+    margin: 5% 10% 10% 10%;
+}
+
+img{
+    border: solid 9px rgb(105, 37, 173);
+}
+
+.sobre{
+    columns: 50px 2;
+    text-align: center;
+    padding: 50px;
+}
+
+p.top{
+    padding-top: 30%;
+}
+
+.projetos{
+    text-align: center;
+    padding: 100px;
+    
+}
+
+.contato{
+    padding: 50px;
+    font-size: larger;
+}
+
+
+
+
+
