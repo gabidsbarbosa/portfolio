@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %} 
+
+<header>
+
+    <button><a href="/">PÁGINA INICIAL</a></button>
+    <button><a href="/sobre">SOBRE</a></button>
+    <button><a href="/projetos">PROJETOS</a></button>
+    <button><a href="/contato">CONTATO</a></button>
+
+</header>
+
+<main>
+
+    <div class="title-about">
+        <h2>SOBRE</h2>
+    </div>
+
+    <div class="cv">
+        <button><img src="../static/image/download_image.png" alt="imagem do símbolo de download">BAIXAR CURRÍCULO PDF</button>
+    </div>
+
+    <div class="text-about">
+        <p>Meu nome é Gabriela da Silva Barbosa, tenho 20 anos, sou de São José dos Campos - São Paulo e estou cursando Desenvolvimento de Software Multiplataforma na FATEC Profº Jessen Vidal de São José dos Campos.</p>
+    </div>
+
+</main>
+
+<aside>
+
+    <img src="" alt="foto de Gabriela da Silva Barbosa, desenvolvedora desse portfólio.">
+
+</aside>
+
+{% endblock %}
