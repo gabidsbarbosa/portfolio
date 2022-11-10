@@ -1,35 +1,25 @@
 {% extends "base.html" %}
 
 {% block content %} 
+<main id="redes">
 
-<header>
-
-    <button><a href="/">PÁGINA INICIAL</a></button>
-    <button><a href="/sobre">SOBRE</a></button>
-    <button><a href="/projetos">PROJETOS</a></button>
-    <button><a href="/contato">CONTATO</a></button>
-
-</header>
-
-<main>
-
-    <div class="title-contact">
-        <h2>CONTATO</h2>
+    <div class="title">
+        <h2><i class="fa-solid fa-earth-americas"></i> CONTATO</h2>
     </div>
 
     <nav class="networks">
         <a 
         target="_blank"
-        href="https://www.linkedin.com/in/gabrieladsbarbosa/"><img src="../static/image/_Linkedin.png" alt="imagem do logo do LinkedIn"></a>
+        href="https://www.linkedin.com/in/gabrieladsbarbosa/"><img class="network" src="../static/image/_Linkedin.png" alt="imagem do logo do LinkedIn"></a>
         <a 
         target="_blank"
-        href="https://github.com/gabidsbarbosa"><img src="../static/image/_Github.png" alt="imagem do logo do GitHub"></a>
+        href="https://github.com/gabidsbarbosa"><img class="network" src="../static/image/_Github.png" alt="imagem do logo do GitHub"></a>
         <a 
         target="_blank"
-        href="https://www.instagram.com/gabidsbarbosa/"><img src="../static/image/_Instagram.png" alt="imagem do logo do Instagram"></a>
+        href="https://www.instagram.com/gabidsbarbosa/"><img class="network" src="../static/image/_Instagram.png" alt="imagem do logo do Instagram"></a>
         <a 
         target="_blank"
-        href="https://www.pinterest.com/gabidsbarbosa/"><img src="../static/image/_Pinterest.png" alt="imagem do logo do Pinterest"></a>
+        href="https://www.pinterest.com/gabidsbarbosa/"><img class="network" src="../static/image/_Pinterest.png" alt="imagem do logo do Pinterest"></a>
     </nav>
 
     <div class="email">
@@ -39,7 +29,8 @@
     <nav class="wishlist">
         <a 
         target="_blank"
-        href="https://www.amazon.com.br/hz/wishlist/ls/8ANN5C4TCB8B?ref_=wl_share"><img src="../static/image/_Amazon.png" alt="imagem do logo da Amazon">compre um livro para mim pela minha wishlist da Amazon!</a>
+        href="https://www.amazon.com.br/hz/wishlist/ls/8ANN5C4TCB8B?ref_=wl_share">
+        <img id="wishlist" src="../static/image/_Amazon.png" alt="imagem do logo da Amazon"><p class="book">compre um livro para mim pela minha wishlist da Amazon!</p></a>
     </nav>
 
 </main>

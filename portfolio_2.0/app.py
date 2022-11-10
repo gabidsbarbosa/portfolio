@@ -37,5 +37,6 @@ def projeto_3():
     return render_template('project_3.html')
 
 
-
+if __name__ == 'main':
+    app.run(debug=True)
 

@@ -4,7 +4,13 @@
 
 <!-- CÓDIGO AQUI -->
 
-<section>
+<header>
+
+    {% block nav %}{% endblock %}
+
+</header>
+
+<main id="welcome">
 
     <div class="welcome">
         <h1>SEJA BEM-VINDO!</h1>
@@ -14,12 +20,6 @@
         <h3>portfólio de Gabriela da Silva Barbosa, desenvolvedora web.</h3>
     </div>
 
-    <div class="botoes">
-        <button><a href="/sobre">SOBRE</a></button>
-        <button><a href="/projetos">PROJETOS</a></button>
-        <button><a href="/contato">CONTATO</a></button>
-    </div>
-
-</section>
+</main>
 
 {% endblock %}

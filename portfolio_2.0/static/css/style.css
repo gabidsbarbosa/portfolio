@@ -1,0 +1,205 @@
+* {
+    font-family: 'Cousine', monospace;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #000;
+}
+
+body {
+    background-color: #8affc8;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* animation */
+
+.welcome {
+    border-right: solid 3px rgba(0, 153, 69, 0.75);
+    white-space: nowrap;
+    overflow: hidden;  
+    color: #000;
+    font-size: 3.25em;
+}
+
+.welcome {
+    animation: animated-text 2s steps(15) .8s infinite normal both,
+    animated-cursor 3s steps(14) infinite normal;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 100%;}
+}
+  
+/* cursor animations */
+  
+@keyframes animated-cursor{
+    from{border-right-color: rgb(157, 255, 0);}
+    to{border-right-color: #000;}
+}
+
+/* NAVBAR */
+
+#navbar {
+    background-color: #4fbe8a;
+    width: 100%;
+    margin-right: auto;
+}
+
+#navbar-columns {
+    display: grid;
+    grid: 100% / 25% 75%;
+}
+
+#navbar a:hover {
+    color: #8affc8;
+}
+
+.navbar-brand img {
+    width: 5em;
+    margin-top: .7em;
+    margin-left: 1em;
+    float: left;
+}
+
+#navbar-items .navbar-nav {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+#navbar-items .nav-item {
+    margin: 2em 1.75em;
+} 
+
+.nav-text {
+    float: right;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* index */
+
+#welcome {
+    padding-top: 8%;
+    padding-left: 8%;
+}
+
+.frase {
+    margin-top: 3%;
+    font-size: larger;
+}
+
+/* about */
+
+.pfp {
+    width: 60%;
+    border-radius: 50%;
+    border: 0;
+    border: 7px solid #ffffffc0;
+    float: left;    
+    margin-left: 10em;
+    margin-top: 0;
+}
+
+#about {
+    padding: 3% 5%;
+    display: grid;
+    grid: 100%;
+    grid-gap: .2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+#cv {
+    background-color: #ffffff;
+    border: 1px solid #000;
+    padding: 3% 2.75%;
+    font-size: 1.25em;
+    font-weight: bolder;
+    border-radius: 10px;
+    margin-top: 3em;
+    margin-left: 3em;
+}
+
+.title {
+    font-size: x-large;
+    margin-left: 3em;
+}
+
+.text-about {
+    width: 110%;
+    margin-top: 3em;
+    margin-left: 3em;
+    font-size: larger;  
+    text-align: justify;
+}
+
+/* project */
+
+#project {
+    padding: 3% 5%;
+}
+
+.projeto {
+    width: 10em;
+}
+
+.columns-projects {
+    padding: 2% 10%;
+    display: grid;
+}
+
+    
+/* contact */
+
+#redes {
+    padding: 3% 5%;
+}
+
+.networks {
+    padding: 3% 12%;
+    margin-left: 10em;
+    margin-top: .5em;
+}
+
+.network {
+    width: 15%;
+    margin: 0 1em;
+}
+
+.wishlist {
+    font-weight: bold;
+}
+
+#wishlist {
+    margin-top: 2em;
+    margin-left: 15em;
+    padding: 0 0;
+    width: 4%;
+    float: right;
+}
+
+.book {
+    margin-left: 18em;
+    float: left;
+}

@@ -5,17 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" href= "{{ url_for('static',filename='css/meuestilo.css') }}">        
+    <link rel= "stylesheet" href= "{{ url_for('static',filename='css/style.css') }}"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- icons fontawesome -->
+    <script src="https://kit.fontawesome.com/690488a588.js" crossorigin="anonymous"></script>
     <title>Portfólio</title>
 
 </head>
 
 <body>
 
-    {% block content %}
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-3" id="navbar-columns">
 
+            <div class="brand-img">
+                <a href="/" class="navbar-brand primary-color" id="brand">
+                    <img src="../static/image/jasmine.png" alt="flor verde">
+                </a>
+            </div>
+            <div class="nav-text">
+                <div class="basic navbar" id="navbar-items">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link active primary-color" aria-current="page">Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/sobre" class="nav-link primary-color">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/projetos" class="nav-link primary-color">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/contato" class="nav-link primary-color">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    {% block content %}
     {% endblock %}
     
+    <footer>&copy; Gabriela da Silva Barbosa 2022</footer>
+    
+
 </body>
 
 </html>
