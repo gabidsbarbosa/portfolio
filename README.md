@@ -10,7 +10,7 @@ Portfólio da matéria Design Digital no curso Desenvolvimento de Software Multi
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ## 🔨 Como executar o projeto
-<h3>Possuir os seguintes aplicativos em sua máquina:</h3>
+<h3>Possuir o(s) seguinte(s) aplicativo(s):</h3>
 
 > Python 3.10 - https://www.python.org/ <br>
 
@@ -18,7 +18,9 @@ Portfólio da matéria Design Digital no curso Desenvolvimento de Software Multi
 
 > https://github.com/gabidsbarbosa/portfolio.git
 
-<h3>Abrir o CMD na pasta portfolio_2.0 e digitar:</h3>
+![Windows](https://img.shields.io/badge/Windows-017AD7?style=for-the-badge&logo=windows&logoColor=white)
+
+<h3>Abrir o CMD na pasta portfolio_2.0 e criar ambiente virtual:</h3>
 
 ```python
 	python -m venv venv
@@ -42,4 +44,32 @@ ou
 
 ```python
 	flask --app app --debug run
+```
+![Linux](https://img.shields.io/badge/Linux-E34F26?style=for-the-badge&logo=linux&logoColor=black)
+
+<h3>Abrir o CMD na pasta portfolio_2.0 e criar ambiente virtual:</h3>
+
+```python
+	$ python3 -m venv venv
+```
+
+```python
+	$ source venv/bin/activate
+```
+
+<h3>Instalar o Flask:</h3>
+
+```python
+	$ pip install flask
+```
+<h3>Executar:</h3>
+<h2> Entrar na pasta que contem o arquivo .py e executar o seguinte comando:</h2>
+
+```python
+	$ flask run
+```
+ou
+
+```python
+	$ flask --app app --debug run
 ```
