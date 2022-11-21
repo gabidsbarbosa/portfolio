@@ -8,6 +8,7 @@ Portfólio da matéria Design Digital no curso Desenvolvimento de Software Multi
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ## 🔨 Como executar o projeto
 <h3>Possuir o(s) seguinte(s) aplicativo(s):</h3>
