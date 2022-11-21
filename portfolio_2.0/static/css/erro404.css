@@ -1,6 +1,6 @@
 /* erro 404 */
 * {
-    background-color: #497c2c;
+    background-color: #4ca34c;
     font-family: 'Cousine', monospace;
 }
 
@@ -45,4 +45,30 @@
 a {
     text-decoration: none!important;
     color: rgb(0, 0, 0)!important;
+}
+
+@media(max-width: 500px) {
+    .err {
+        color: #ffffff;
+        font-size: 7rem;
+        position:absolute;
+        left: 22%;
+        top: 8%;
+    }
+    
+    .far {
+        position: absolute;
+        font-size: 5.5rem;
+        left: 40%;
+        top: 13%;
+        color: #ffffff;
+    }
+    
+    .err2 {
+        color: #ffffff;
+        font-size: 7rem;
+        position:absolute;
+        left: 60%;
+        top: 8%;
+    }
 }

@@ -2,11 +2,27 @@
 
 {% block content %} 
 <main id="redes">
-
-    <div class="title">
-        <h2><i class="bi bi-globe-americas"></i> <b>CONTATO</b></h2>
+    <div>
+        <h2 class="title3">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fas fa-puzzle-piece fa-3x"></i>
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><b>meu filme favorito (o menino e o mundo)</b></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/static/image/menino-mundo.jpg" alt="protagonista do filme o menino e mundo" width="400" height="400" style="margin-left: 1em;">
+                    </div>
+                </div>
+                </div>
+            </div>
+            <b>CONTATO</b>
+            </h2>
     </div>
-
     <nav class="networks">
         <a 
         target="_blank"

@@ -3,39 +3,50 @@
 {% block content %} 
 
 <main id="project">
-
-    <div class="title">
-        <h2><i class="bi bi-palette-fill"></i> <b>PROJETOS</b></h2>
-    </div>
-
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="projeto">
-          <div class="carousel-item active">
-            <a href="/projeto_1">
-            <img class="d-block w-70" src="/static/image/projeto_1.png" alt="First slide">
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a href="/projeto_2"></a>
-            <img class="d-block w-100" src="/static/image/projeto_2.png" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <a href="/projeto_3">
-            <img class="d-block w-100" src="/static/image/projeto_3.png" alt="Third slide">
-            </a>
-          </div>
+  <div>
+    <h2 class="title2">
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="fas fa-cat fa-3x"></i>
+    </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"><b>Meus gatíneos!</b></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="/static/image/pantera.jpg" alt="minha gatinha pantera" width="220" height="330">
+                <img src="/static/image/peter.jpg" alt="meu gatinho peter" width="200" height="300">
+            </div>
         </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a>
     </div>
-
+    <b>PROJETOS</b>
+    </h2>
+</div>
+  <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <a href="/projeto_1">
+            <img src="/static/image/projeto1.png" alt="imagem projeto 1">
+          </a>
+        </div>
+        <br>
+        <div class="col-sm">
+          <a href="/projeto_2">
+            <img src="/static/image/projeto2.png" alt="imagem projeto 2">
+          </a>
+        </div>
+        <br>
+        <div class="col-sm">
+          <a href="/projeto_3">
+            <img src="/static/image/projeto3.png" alt="imagem projeto 3">
+          </a>
+        </div>
+      </div>
+  </div>
+  </div>
 </main>
 
 {% endblock %}
