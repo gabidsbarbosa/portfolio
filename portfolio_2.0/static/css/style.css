@@ -117,6 +117,7 @@ h1 {
     float: left;    
     margin-left: 10em;
     margin-top: 0;
+    filter:sepia(2%);
 }
 
 #about {
