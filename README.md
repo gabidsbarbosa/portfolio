@@ -66,7 +66,7 @@ ou
 	$ pip install flask
 ```
 <h3>Executar:</h3>
-<h2> Entrar na pasta que contem o arquivo .py e executar o seguinte comando:</h2>
+<h4>Entrar na pasta que contem o arquivo .py e executar o seguinte comando:</h4>
 
 ```python
 	$ flask run
