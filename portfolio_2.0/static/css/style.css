@@ -7,15 +7,24 @@
 
 ul {
     list-style: none;
+    text-decoration: none;
 }
 
-a {
+li {
+    padding: 1em;
+}
+
+a, a:link {
     color: #000;
+    text-decoration: none;
+    border: none;
 }
 
-body {
-    background-color: #8affc8;
+#navbar-items {
+    color: #000;
+    text-decoration: none;
 }
+
 
 footer {
     position: fixed;
@@ -26,27 +35,8 @@ footer {
     text-align: center;
 }
 
-
-/* animation */
-
-.welcome {
-    border-right: solid 3px rgba(0, 153, 69, 0.75);
-    white-space: nowrap;
-    overflow: hidden;  
-    color: #000;
-    font-size: 3.25em;
-}
-
-.welcome {
-    animation: animated-text 2s steps(15) .8s infinite normal both,
-    animated-cursor 3s steps(14) infinite normal;
-}
-
-/* text animation */
-
-@keyframes animated-text{
-    from{width: 0;}
-    to{width: 100%;}
+h3 {
+    padding: 2% 10%;
 }
   
 /* cursor animations */
@@ -62,11 +52,16 @@ footer {
     background-color: #4fbe8a;
     width: 100%;
     margin-right: auto;
+    color: #000;
 }
 
 #navbar-columns {
     display: grid;
     grid: 100% / 25% 75%;
+}
+
+#navbar a:link {
+    color: #000;
 }
 
 #navbar a:hover {
@@ -80,22 +75,19 @@ footer {
     float: left;
 }
 
+
 #navbar-items .navbar-nav {
     display: flex;
     justify-content: right;
     width: 100%;
+    text-decoration: none;
+    color: #000;
 }
 
-#navbar-items .nav-item {
-    margin: 2em 1.75em;
+#navbar-items {
+    color: #000;
+    margin: 1em 5em;
 } 
-
-.nav-text {
-    float: right;
-    font-size: 1.25em;
-    font-weight: bold;
-    text-align: center;
-}
 
 /* index */
 
@@ -104,10 +96,16 @@ footer {
     padding-left: 8%;
 }
 
+
 .frase {
+    padding: 1%;
     margin-top: 3%;
-    font-size: larger;
 }
+
+h1 {
+    font-size: 3em!important;
+}
+
 
 /* about */
 
@@ -134,15 +132,11 @@ footer {
     background-color: #ffffff;
     border: 1px solid #000;
     padding: 3% 2.75%;
+    color: #000;
     font-size: 1.25em;
     font-weight: bolder;
     border-radius: 10px;
     margin-top: 3em;
-    margin-left: 3em;
-}
-
-.title {
-    font-size: x-large;
     margin-left: 3em;
 }
 
@@ -161,14 +155,28 @@ footer {
 }
 
 .projeto {
-    width: 10em;
+    width: 14em;
 }
 
-.columns-projects {
+#projects {
     padding: 2% 10%;
     display: grid;
+    grid-column: 1;
+    grid-gap: 1%;
 }
 
+body {
+    background-color: #8affc8;
+}
+
+.about_project {
+    padding: 0 13%;
+}
+
+.sites {
+    padding: 0 13%;
+    color: #000;
+}
     
 /* contact */
 
@@ -178,13 +186,13 @@ footer {
 
 .networks {
     padding: 3% 12%;
-    margin-left: 10em;
+    margin-left: 12em;
     margin-top: .5em;
 }
 
 .network {
-    width: 15%;
-    margin: 0 1em;
+    width: 12%;
+    margin: 0 3em;
 }
 
 .wishlist {
@@ -192,14 +200,168 @@ footer {
 }
 
 #wishlist {
-    margin-top: 2em;
-    margin-left: 15em;
+    margin-top: .5em;
+    margin-left: 36em;
     padding: 0 0;
-    width: 4%;
-    float: right;
+    width: 5%;
 }
 
 .book {
-    margin-left: 18em;
-    float: left;
+    margin-left: 15em;
+    font-size: 1.25em;
+    margin-top: .5em;
+    color: #000;
+    text-decoration: none!important;
+    outline: none;
 }
+
+.book, a:link, a:visited {
+    text-decoration: none;
+}
+
+.email {
+    font-weight: bolder;
+    margin-left: 14em;
+    margin-top: .5em;
+    font-size: 1.75em;
+    color: #000;
+}
+
+@media(max-width: 500px) {
+
+    /* geral */
+    .navbar-toggler {
+        display: block;
+        margin-left: 15em;
+        margin-top: 2em;
+    }
+
+    .navbar-light {
+        color: #fff;
+    }
+
+    .navbar-brand img {
+        width: 5em;
+        margin-top: -3em;
+        margin-left: 1em;
+        float: left;
+    }
+
+    li {
+        padding: .5em;
+    }
+
+    /* about */
+    .pfp {
+        width: 60vw;
+        border-radius: 50%;
+        padding-right: 25%;
+        margin-left: -25em;
+        margin-top: 4em;
+    }
+
+    #about {
+        padding: 3% 3%;
+    }
+    
+    #cv {
+        background-color: #ffffff;
+        border: 1px solid #000;
+        color: #000;
+        padding: 3% 5%;
+        width: 18em;
+        font-size: 1em;
+        font-weight: bolder;
+        border-radius: 10px;
+        margin-top: .5em;
+        margin-left: 4em;
+        margin-bottom: 1em;
+    }
+
+    .text-about {
+        margin-left: 3em;
+        padding: 3% 0;
+        padding-right: 36%;
+        margin-top: 16em;
+    }
+
+    /* contact */
+    .title {
+        font-size: 5vw;
+        margin-top: .4em;
+        margin-left: 3em;
+    }
+
+    #redes {
+        padding: .5% 3%;
+    }
+
+    .networks {
+        padding: 2% 3%;
+        margin-left: 1.5em;
+        margin-top: .5em;
+    }
+    .network {
+        width: 18%;
+        margin: 1em 1.25em;
+    }
+
+    .email {
+        font-weight: bold;
+        margin-left: 2em;
+        margin-top: 1em;
+        font-size: 1.25em;
+    }
+
+    .book {
+        text-align: justify;
+        margin: .5em 1em;
+    }
+
+    #wishlist {
+        margin-top: 1em;
+        margin-left: 10em;
+        padding: 0 0;
+        width: 10%;
+    }
+
+    /* project */
+
+    #project {
+        padding: 3% 5%;
+    }
+
+    .projeto {
+        width: 17em;
+    }
+
+    .col-sm {
+        padding: 2em;
+    }
+
+    #projects {
+        margin-left: 2em;
+        padding: 2% 10%;
+        display: grid;
+        grid-column: 1;
+    }
+}
+
+/* erro 404 */
+  .msg {
+      text-align: center;
+      font-size: 1.6rem;
+      position:absolute;
+      left: 16%;
+      top: 45%;
+      width: 75%;
+    }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }

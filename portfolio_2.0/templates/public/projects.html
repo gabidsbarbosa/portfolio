@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %} 
+
+<main id="project">
+
+    <div class="title">
+        <h2><i class="fa-solid fa-palette"></i> <b>PROJETOS</b></h2>
+    </div>
+
+    <div class="container" id="projects">
+        <div class="row">
+            <div class="col-sm">
+                <a 
+                target="_blank"
+                href="/project_1">
+                <img class="projeto" src="../static/image/projeto_1.png" alt="Imagem do projeto eSports da Next Level Week da Rocketseat">
+                </a>
+            </div>
+            <div class="col-sm">
+                <a 
+                target="_blank"
+                href="/project_2">
+                <img class="projeto" src="../static/image/projeto_2.png" alt="Imagem do projeto do 1º semestre da faculdade chamado Octoplus Bank">
+                </a>
+            </div>
+            <div class="col-sm">
+                <a 
+                target="_blank"
+                href="/project_3">
+                <img class="projeto" src="../static/image/projeto_3.png" alt="Imagem do projeto de um site pessoal de livros e filmes favoritos e pendentes">
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

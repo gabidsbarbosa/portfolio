@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" href= "{{ url_for('static',filename='css/style.css') }}"> 
+    <link rel= "stylesheet" type="text/css" href= "{{ url_for('static',filename='css/style.css') }}"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- icons fontawesome -->
     <script src="https://kit.fontawesome.com/690488a588.js" crossorigin="anonymous"></script>
     <title>Portfólio</title>
@@ -16,39 +20,37 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
-        <div class="container py-3" id="navbar-columns">
-
-            <div class="brand-img">
-                <a href="/" class="navbar-brand primary-color" id="brand">
-                    <img src="../static/image/jasmine.png" alt="flor verde">
-                </a>
-            </div>
-            <div class="nav-text">
-                <div class="basic navbar" id="navbar-items">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a href="/" class="nav-link active primary-color" aria-current="page">Página Inicial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/sobre" class="nav-link primary-color">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/projetos" class="nav-link primary-color">Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/contato" class="nav-link primary-color">Contato</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-center" id="navbar" style="color: #000;">
+      <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: #fff;"></span>
+      </button>
+        <div class="container-fluid" id="navbar-style">
+            <a class="navbar-brand" href="/">
+              <img src="../static/image/jasmine.png" alt="flor verde">
+            </a>
+          <div class="collapse navbar-collapse" id="navbar-items">
+              <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                <li class="nav-item">
+                  <a {% block linkAtivo %}{% endblock %} href="/">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                  <a {% block linkAtivoPortfolio %}{% endblock %} href="/sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a {% block linkAtivoEducacao %}{% endblock %} href="/projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                  <a {% block linkAtivoContatos %}{% endblock %} href="/contato">Contato</a>
+                </li>
+              </ul>
             </div>
         </div>
-    </nav>
-    {% block content %}
-    {% endblock %}
+      </nav>
+      <main>
+{% block content %}{% endblock %}
+      </main>
     
-    <footer>&copy; Gabriela da Silva Barbosa 2022</footer>
+    
     
 
 </body>
