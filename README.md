@@ -10,6 +10,9 @@ Portfólio da matéria Design Digital no curso Desenvolvimento de Software Multi
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ## 🔨 Como executar o projeto
+<h3>Possuir os seguintes aplicativos em sua máquina:</h3>
+
+> Python 3.10 - https://www.python.org/ <br>
 
 <h3>Clonar o repositório</h3>
 
