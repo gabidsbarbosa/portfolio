@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+body {
+    background-color: #8affc8!important;
+    background-attachment: fixed;
+}
+
 ul {
     list-style: none;
     text-decoration: none;
@@ -64,8 +69,8 @@ h3 {
     color: #000;
 }
 
-#navbar a:hover {
-    color: #8affc8;
+.nav-item a:hover {
+    color: #8affc8!important;
 }
 
 .navbar-brand img {
@@ -81,13 +86,15 @@ h3 {
     justify-content: right;
     width: 100%;
     text-decoration: none;
-    color: #000;
 }
 
 #navbar-items {
-    color: #000;
     margin: 1em 5em;
 } 
+
+.nav-item {
+    color: #000!important;
+}
 
 /* index */
 
@@ -103,7 +110,9 @@ h3 {
 }
 
 h1 {
-    font-size: 3em!important;
+    font-size: 7em!important;
+    font-weight: bold!important;
+    color: #000;
 }
 
 
@@ -117,7 +126,7 @@ h1 {
     float: left;    
     margin-left: 10em;
     margin-top: 0;
-    filter:sepia(2%);
+    filter:sepia(10%);
 }
 
 #about {
@@ -156,7 +165,8 @@ h1 {
 }
 
 .projeto {
-    width: 14em;
+    width: 100%;
+    margin-left: 15em;
 }
 
 #projects {
@@ -166,9 +176,6 @@ h1 {
     grid-gap: 1%;
 }
 
-body {
-    background-color: #8affc8;
-}
 
 .about_project {
     padding: 0 13%;
@@ -178,6 +185,7 @@ body {
     padding: 0 13%;
     color: #000;
 }
+
     
 /* contact */
 
@@ -201,7 +209,7 @@ body {
 }
 
 #wishlist {
-    margin-top: .5em;
+    margin-top: 2em;
     margin-left: 36em;
     padding: 0 0;
     width: 5%;
@@ -220,20 +228,22 @@ body {
     text-decoration: none;
 }
 
+
 .email {
     font-weight: bolder;
     margin-left: 14em;
-    margin-top: .5em;
+    margin-top: 1.25em;
     font-size: 1.75em;
     color: #000;
 }
+
 
 @media(max-width: 500px) {
 
     /* geral */
     .navbar-toggler {
         display: block;
-        margin-left: 15em;
+        margin-left: 13em;
         margin-top: 2em;
     }
 
@@ -248,8 +258,19 @@ body {
         float: left;
     }
 
+    
+    .navbar-item {
+        color: #000!important;
+    }
+
     li {
         padding: .5em;
+    }
+
+    h1 {
+        font-size: 4em!important;
+        font-weight: bold!important;
+        color: #000;
     }
 
     /* about */
@@ -283,12 +304,12 @@ body {
         margin-left: 3em;
         padding: 3% 0;
         padding-right: 36%;
-        margin-top: 16em;
+        margin-top: 18em;
     }
 
     /* contact */
     .title {
-        font-size: 5vw;
+        font-size: 5vw!important;
         margin-top: .4em;
         margin-left: 3em;
     }
@@ -299,7 +320,7 @@ body {
 
     .networks {
         padding: 2% 3%;
-        margin-left: 1.5em;
+        margin-left: 1.75em;
         margin-top: .5em;
     }
     .network {
@@ -309,19 +330,19 @@ body {
 
     .email {
         font-weight: bold;
-        margin-left: 2em;
+        margin-left: 2.5em;
         margin-top: 1em;
         font-size: 1.25em;
     }
 
     .book {
-        text-align: justify;
+        text-align:center;
         margin: .5em 1em;
     }
 
     #wishlist {
         margin-top: 1em;
-        margin-left: 10em;
+        margin-left: 13em;
         padding: 0 0;
         width: 10%;
     }
@@ -329,11 +350,12 @@ body {
     /* project */
 
     #project {
-        padding: 3% 5%;
+        padding: 2% 5%;
     }
 
     .projeto {
-        width: 17em;
+        width: 10%;
+        margin-left: 2em;
     }
 
     .col-sm {
@@ -342,27 +364,39 @@ body {
 
     #projects {
         margin-left: 2em;
-        padding: 2% 10%;
+        padding: 1% 10%;
         display: grid;
         grid-column: 1;
     }
 }
 
-/* erro 404 */
-  .msg {
-      text-align: center;
-      font-size: 1.6rem;
-      position:absolute;
-      left: 16%;
-      top: 45%;
-      width: 75%;
-    }
-  
-  a {
-    text-decoration: none;
-    color: white;
+/* flower - snow */
+
+.snowflake {
+    color: rgb(204, 116, 116);
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #470510;
   }
   
-  a:hover {
-    text-decoration: underline;
-  }
+  @-webkit-keyframes snowflakes-fall{0%{top:-15%}100%{top:100%}}
+  @-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}
+  @keyframes snowflakes-fall{0%{top:-20%}100%{top:100%}}
+  @keyframes snowflakes-shake{0%{transform:translateX(0px)}
+  50%{transform:translateX(80px)}100%{transform:translateX(0px)}}
+  .snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;
+    -ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;
+    -webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;
+    -webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;
+    animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;
+    animation-iteration-count:infinite,infinite;animation-play-state:running,running}
+    .snowflake:nth-of-type(0){left:2%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}
+    .snowflake:nth-of-type(1){left:5%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}
+    .snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}
+    .snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}
+    .snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}
+    .snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}
+    .snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}
+    .snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:https://proxy.everskies.com/a/https://proxy.everskies.com/a/2.5s,1s;animation-delay:https://proxy.everskies.com/a/https://proxy.everskies.com/a/2.5s,1s}
+    .snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}
+    .snowflake:nth-of-type(9){left:95%;-webkit-animation-delay:0s;https://proxy.everskies.com/a/https://proxy.everskies.com/a/1.5s;animation-delay:3s,https://proxy.everskies.com/a/https://proxy.everskies.com/a/1.5s}
