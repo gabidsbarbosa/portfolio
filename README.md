@@ -29,7 +29,7 @@ Portfólio da matéria Design Digital no curso Desenvolvimento de Software Multi
 ```
 
 ```python
-	venv\Scripts\Activate.ps1
+	venv\Scripts\Activate
 ```
 
 <h3>Instalar o Flask:</h3>
