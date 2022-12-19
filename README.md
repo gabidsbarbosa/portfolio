@@ -1,7 +1,7 @@
 # 🖼️ Portfolio
 Portfólio da matéria Design Digital no curso Desenvolvimento de Software Multiplataforma da FATEC.
 
-<h2>🔗[gabidsbarbosa.vercel.app](https://gabidsbarbosa.vercel.app/)</h2>
+<h2>gabidsbarbosa.vercel.app</h2>
 
 ##  👩‍💻 Tecnologias
 
