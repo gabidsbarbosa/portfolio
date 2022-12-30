@@ -124,7 +124,6 @@ h1 {
     width: 60%;
     border-radius: 50%;
     border: 0;
-    border: 7px solid #ffffffc0;
     float: left;    
     margin-left: 10em;
     margin-top: 0;
@@ -175,7 +174,7 @@ h1 {
     width: 50%;
     display: grid;
     grid-column: 1;
-    grid-gap: 3%;
+    grid-gap: 2%;
     margin-left: 2em;
     padding: 2% 0;
 }
@@ -263,12 +262,12 @@ h1 {
     cursor: default;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 450px) {
 
     /* geral */
     .navbar-toggler {
         display: block;
-        margin-left: 15em;
+        margin-left: 10em;
         margin-top: 2em;
     }
 
@@ -305,15 +304,16 @@ h1 {
 
     /* about */
     .pfp {
-        width: 70vw;
+        width: 21em;
         border-radius: 50%;
-        padding-right: 25%;
-        margin-left: -26em;
-        margin-top: 4.55em;
+        padding: 15% 30%;
+        margin-left: -23em;
+        margin-top: 5em;
     }
 
-    #about {
-        padding: 2% 3%;
+    .text-about {
+        padding-right: 45%;
+        margin-right: 10em;
     }
     
     #cv {
@@ -342,6 +342,10 @@ h1 {
         margin-left: 1em;
     }
 
+    #vintemil {
+        margin-top: 1em;
+        margin-left: 1em;
+    }
     /* contact */
 
     .title3 {
@@ -350,11 +354,11 @@ h1 {
     }
 
     #redes {
-        padding: .5% 3%;
+        padding: .5% 1%;
     }
 
     .networks {
-        padding: 2% 3%;
+        padding: 2% 2%;
         margin-left: 1.75em;
         margin-top: .5em;
     }
@@ -365,30 +369,40 @@ h1 {
 
     .email {
         font-weight: bold;
-        margin-left: 2.5em;
+        margin-left: 1em;
         margin-top: 1em;
         font-size: 1.25em;
     }
 
     .book {
-        text-align:center;
-        margin: .5em 1em;
+        text-align: center;
+        margin: .5em .3em;
     }
 
     #wishlist {
-        margin-top: 1em;
-        margin-left: 13em;
+        margin-top: 2em;
+        margin-left: 1em;
         padding: 0 0;
         width: 10%;
+    }
+
+    #menino {
+        height: 70vw;
+        width: 70vw;
     }
 
     /* project */
 
     .col-sm {
-        width: 50%;
-        margin-left: 4em;
-        margin-top: 3em;
+        width: 30%;
+        margin-top: 1em;
         margin-bottom: 3em;
+        margin-right: 10em;
+        margin-left: 0em;
+    }
+
+    #peter {
+        margin-top: .3em;
     }
 }
 
